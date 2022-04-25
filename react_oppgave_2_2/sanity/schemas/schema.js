@@ -11,6 +11,68 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    /* Your types here! */
+    {
+      name: "bob",
+      title: "sir",
+      type: "document",
+      fields: [
+        {
+          title: "Title",
+          name: "title",
+          type: "string",
+        },
+        {
+          title: "Slug",
+          name: "slug",
+          type: "slug",
+        },
+        {
+          title: "Slogan",
+          name: "slogan",
+          type: "string",
+        }, 
+        {
+          title: "Premable",
+          name: "premable",
+          type: "string",
+        }, 
+        {
+          title: "Box",
+          name: "box",
+          type: "string",
+        }, 
+        {
+          title: "Portable Text",
+          name: "portable_text",
+          type: "text",
+        },
+        {
+          title: "Initial Content",
+          name: "initial_content",
+          type: "InitialContent",
+        },    
+      ],
+    },
+    {
+			name: "InitialContent",
+      title: "InitialContent",
+      type: "object",
+				fields: [
+					{
+						title: 'Title',
+
+						name: 'title',
+
+						type: 'string',
+					},
+					{
+						title: 'Text',
+
+						name: 'text',
+
+						type: 'text',
+					},
+				],
+			},
   ]),
 })
