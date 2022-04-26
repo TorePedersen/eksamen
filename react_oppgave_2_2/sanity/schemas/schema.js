@@ -12,8 +12,8 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     {
-      name: "bob",
-      title: "sir",
+      name: "service",
+      title: "Service",
       type: "document",
       fields: [
         {

@@ -1,3 +1,8 @@
+
+import { getTjenester } from "./lib/services/tjenesteService"
+
+getTjenester()
+
 export default function App() {
   // TODO: Legg til om nødvendig logikk her
   return (
