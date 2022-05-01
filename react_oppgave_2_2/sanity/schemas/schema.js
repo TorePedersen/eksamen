@@ -32,8 +32,8 @@ export default createSchema({
           type: "string",
         }, 
         {
-          title: "Premable",
-          name: "premable",
+          title: "PreAmble",
+          name: "preAmble",
           type: "string",
         }, 
         {
@@ -43,19 +43,19 @@ export default createSchema({
         }, 
         {
           title: "Portable Text",
-          name: "portable_text",
+          name: "portableText",
           type: "text",
         },
         {
           title: "Initial Content",
-          name: "initial_content",
-          type: "InitialContent",
+          name: "initialContent",
+          type: "initialContent",
         },    
       ],
     },
     {
-			name: "InitialContent",
       title: "InitialContent",
+			name: "initialContent",
       type: "object",
 				fields: [
 					{

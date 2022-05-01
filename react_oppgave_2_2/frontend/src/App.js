@@ -1,13 +1,20 @@
 
-import { getTjenester } from "./lib/services/tjenesteService"
-
-getTjenester()
+import { getEvents } from './lib/services/tjenesteService'
 
 export default function App() {
+
+  const getEventData = async () => {
+    const events = await getEvents()
+    console.log(events)
+  }
+
   // TODO: Legg til om nødvendig logikk her
   return (
     <>
       <nav>
+      <button type="button" onClick={getEventData}>
+        Hent data
+      </button>
         <h1 data-testid="logo">
           <a data-testid="logo_link" href="#">
             Tjenesteweb
